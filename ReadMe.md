@@ -115,7 +115,7 @@ The directory must be `client`
 ## 02 Bonuses
 
 We love bonuses, so feel free to add anything you want, example:
-- Query parameters search on API side
+- Authentication
 - Dark Theme
 - ...
 

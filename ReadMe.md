@@ -25,7 +25,7 @@ Dylan De Sousa$
 
 > Don't forget, there is no useless question :-)
 
-- You **MUST** return the project before Tuesday December, 8 at 23:42
+- You **MUST** return the project before Wednesday January 2021, 6 at 20:00
 - You **MUST** add `pu-erh` user as a collaborator.
 - YOU **MUST** define all functions signature by yourself :)
 
@@ -37,11 +37,12 @@ The purpose of theses exercises is simple, play with github API.
 
 ### 00 Prélude
 
-The purpose is to create a simple API using [**express**](https://expressjs.com/fr/) and a showcase app using **React.js**
+The purpose is to create a simple API using [**express**](https://expressjs.com/fr/) and a showcase app using **React.js**<br />
+You'll have 2 separate projects in the same repository : A **server** and a **client**
 
 ## The server
 
-Create a directory call `server` on the `cx-search-in-github` directory
+Create a directory called `server` on the `cx-search-in-github` directory
 
 ### 01 Bonjour, Github
 
@@ -95,7 +96,10 @@ Ex:
 ### 03 Workflow
 
 The purpose is to have a routes `/users/:username` that will take a username string in params and then call the github api to fetch the public informations.
-On fetch, you must store all datas in your database.
+On fetch, you must store all datas in your **Postgress** database using [**Knex**](http://knexjs.org/)<br />
+
+> Feel free to architect your database and table as you want.
+> To fetch an external API take a look at the package `request`, `node-fetch`, etc.
 
 On a new request, you **MUST** check before if you have the user informations in your database.
 
@@ -115,7 +119,6 @@ The directory must be `client`
 ## 02 Bonuses
 
 We love bonuses, so feel free to add anything you want, example:
-- Authentication
 - Dark Theme
 - ...
 
